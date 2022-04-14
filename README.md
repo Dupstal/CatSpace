@@ -13,3 +13,5 @@ The game lets you get an infinite amount of cats from the infamous [CAT API](htt
 - Fancy animations
 - Match timer and ✨ **High Score** ✨ counter
 - Dark mode :(
+
+Note: The original screen plans are [available here](https://www.figma.com/file/lj7FyGAjINhD92WiiTg0Bw/CatSpace.?node-id=0%3A1).
