@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="header">
+        <p class="logo">😼 CatSpace.</p>
+        <div class="labels">
+            <p class="moves">{{ tries }} moves</p>
+            <p class="leave-button" (click)="leaveGame()">Leave game</p>
+        </div>
+    </div>
+    <div class="game-canvas">
+        <div class="card"
+            *ngFor="let card of cardDeck; let i = index"
+            [style.backgroundImage]="
+                card.condition === 'unflipped' ? 'url(./assets/images/catspace-card.png)' :
+                card.condition === 'flipped' ? 'url('+ card.path +')' :
+                'url(./assets/images/catspace-empty.png)'"
+            [style.cursor]="card.condition === 'unflipped' ? 'pointer' : 'default'"
+            (click)="card.condition === 'unflipped' && !clickLock ? flipCard(i) : ''">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  margin: 0 auto;
+  height: 100vh;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .labels {
+      display: flex;
+      p {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        color: #adbabe;
+        &:first-of-type {
+          margin-right: 1.25rem;
+        }
+        &.leave-button {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .game-canvas {
+    width: 100%;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    .card {
+      border-radius: 0.875rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
